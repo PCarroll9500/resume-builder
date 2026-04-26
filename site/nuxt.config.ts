@@ -41,25 +41,26 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL: "/resume-builder/",
     head: {
       viewport: "width=device-width,initial-scale=1",
       link: [
-        { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-        { rel: "mask-icon", href: "/safari-pinned-tab.svg", color: "#222" }
+        { rel: "apple-touch-icon", href: "/resume-builder/apple-touch-icon.png" },
+        { rel: "mask-icon", href: "/resume-builder/safari-pinned-tab.svg", color: "#222" }
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { name: "application-name", content: "Oh My CV!" },
-        { name: "apple-mobile-web-app-title", content: "Oh My CV!" },
+        { name: "application-name", content: "Resume Builder" },
+        { name: "apple-mobile-web-app-title", content: "Resume Builder" },
         { name: "msapplication-TileColor", content: "#fff" },
-        { property: "og:url", content: "https://ohmycv.app" },
+        { property: "og:url", content: "https://pcarroll9500.github.io/resume-builder/" },
         { property: "og:type", content: "website" }
       ]
     }
   },
 
   site: {
-    url: "https://ohmycv.app"
+    url: "https://pcarroll9500.github.io/resume-builder"
   },
 
   pwa,
