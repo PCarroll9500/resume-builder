@@ -43,6 +43,10 @@ export class DynamicCssService {
     return `${selector} h2 { margin-top: ${styles.paragraphSpace}px; }`;
   };
 
+  private headingSpaceBelow = (selector: string, styles: ResumeStyles) => {
+    return `${selector} h2 { margin-bottom: ${styles.headingSpaceBelow}px; }`;
+  };
+
   private fontFamily = (selector: string, styles: ResumeStyles) => {
     const fontEN = styles.fontEN.fontFamily || styles.fontEN.name;
     const fontCJK = styles.fontCJK.fontFamily || styles.fontCJK.name;
@@ -72,6 +76,7 @@ export class DynamicCssService {
       this.fontSize(selector, styles) +
       this.themeColor(selector, styles) +
       this.paragraphSpace(selector, styles) +
+      this.headingSpaceBelow(selector, styles) +
       this.lineHeight(selector, styles) +
       // We only need to set paper size for the preview view in the editor
       (id === undefined ? this.paperSize(styles) : "");

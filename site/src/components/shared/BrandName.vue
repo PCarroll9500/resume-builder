@@ -1,1 +1,1 @@
-<template>Oh<span text-primary>My</span>CV</template>
+<template>Resume<span text-primary>Builder</span></template>

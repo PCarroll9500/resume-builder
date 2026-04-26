@@ -1,7 +1,7 @@
 <template>
   <a
     :class="cn('hover:underline', props.class)"
-    :href="`https://github.com/Renovamen/oh-my-cv/issues/${issue}`"
+    :href="`https://github.com/PCarroll9500/resume-builder/issues/${issue}`"
     target="_blank"
     rel="nofollow noopener"
     >#{{ issue }}</a

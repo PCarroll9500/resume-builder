@@ -6,6 +6,7 @@ export const DEFAULT_STYLES = {
   marginH: 45,
   lineHeight: 1.3,
   paragraphSpace: 5,
+  headingSpaceBelow: 5,
   themeColor: "#377bb5",
   fontCJK: {
     name: "华康宋体",
@@ -19,110 +20,109 @@ export const DEFAULT_STYLES = {
 } as ResumeStyles;
 
 export const DEFAULT_MD_CONTENT = `---
-name: Haha Ha
+name: Patrick Carroll
 header:
-  - text: |
-      <span style="font-size: 1.2em; font-weight: bold;">Applying for: Cooking Engineer</span>
-  - text: <span class="iconify" data-icon="tabler:phone"></span> (+1) 123-456-7890
+  - text: <span class="iconify" data-icon="tabler:phone"></span> (843) 437-6951
     newLine: true
-  - text: <span class="iconify" data-icon="tabler:mail"></span> icancook@email.com
-    link: mailto:icancook@email.com
-  - text: <span class="iconify" data-icon="tabler:brand-github"></span> Renovamen
-    link: https://github.com/Renovamen
-  - text: <span class="iconify" data-icon="charm:person"></span> zxh.me
-    link: https://zxh.me
+  - text: <span class="iconify" data-icon="tabler:mail"></span> PatrickCarroll.IT@outlook.com
+    link: mailto:PatrickCarroll.IT@outlook.com
+  - text: <span class="iconify" data-icon="tabler:brand-github"></span> PCarroll9500
+    link: https://github.com/PCarroll9500
+  - text: <span class="iconify" data-icon="tabler:map-pin"></span> Beavercreek, Ohio
+  - text: <span class="iconify" data-icon="tabler:shield-lock"></span> Clearance: Top-Secret SCI
+    newLine: true
 ---
 
 <!-- Important: Replace all template content, especially contact details, with your own information. -->
 
 <!-- Important: When updating your email address, remember to change both the "text" (visible text) and the "link" (underlying hyperlink) fields. -->
 
-
-## Education
-
-**Harvest University**
-  ~ Cambridge, MA
-
-M.S. in Cooking Science
-  ~ 09/2021 - 01/2023
-
-**Huangdu Institute of Tofu**
-  ~ Shanghai, China
-
-B.Eng. in Salad Engineering
-  ~ 09/2016 - 07/2020
-
-
-## Publications
-
-[~P1]: **Eating is All You Need**
-
-    <u>Haha Ha</u>, San Zhang
-
-    *Conference on Nutritional Ingredients Processing Systems (NIPS), 2099*
-
-[~P2]: **You Only Cook Once: Unified, Real-Time Mapo Tofu Recipe**
-
-    <u>Haha Ha</u>, San Zhang, Si Li, Wu Wang
-
-    *Culinary Visualization and Potato Roasting Conference (CVPR), 2077 **(Best Paper Honorable Mention)***
+10+ years of technical experience in programming, automation, and signal analysis. Reliable, motivated, and seeking opportunities supporting the DoD.
 
 
 ## Experience
 
-**Cooking Engineer Intern**
-  ~ Microwavesoft
-  ~ 07/2021 - Present
+**Junior Model and Simulation Engineer**
+  ~ Radiance Technologies, Beavercreek, Ohio
+  ~ Aug 2024 – Present
 
-- Developed an innovative, versatile cooking methodology applicable across diverse ingredients, incorporating and improving upon recent culinary trends
-- Created a streamlined cream of mushroom soup recipe, achieving results comparable to complex state-of-the-art techniques through a novel mushroom-cutting approach; published in NIPS 2099 (see [~P1])
-- Designed a specialized cooking pan that enhanced research efficiency for team members
-
-
-**Engineering Chef Intern**
-  ~ University of California, Berkebake
-  ~ 08/2020 - Present
-
-- Developed a precise mapo tofu quality assessment technique using thermometer-based measurements
-- Invented a rapid stir-frying algorithm for tofu cooking, replacing vague instructions like "add as much as you can" with specific hot sauce measurements; published in CVPR 2077 (see [~P2])
-- Outperformed SOTA cooking methods in both efficiency and quality across experiments with popular tofu types
+- Integrate Simulink models into AFSIM plugins in C++.
+- Introduce new models into pipeline automation via MATLAB scripting. Automate testing of verification and validation data.
+- Maintain version control via SVN.
+- Collaborate in a Kanban Agile team environment.
 
 
-**Student Chef**
-  ~ Cabbage Melon University
-  ~ 03/2020 - 06/2020
+**Information Systems Technician**
+  ~ United States Navy Reserve, Cincinnati, Ohio
+  ~ Apr 2019 – Feb 2025
 
-- Developed an innovative mapo tofu consumption framework utilizing a spoon-chopstick combination
-- Engineered a filtering method for tofu dataset creation, inspired by bean grinding techniques
-- Established two new metrics for evaluating eating plan novelty and diversity
-- Significantly surpassed existing methods and baselines in diversity, novelty, and coherence
+- Support the Navy part time. Trained in Cisco Routers, Switches, End Devices, IPv4 and IPv6 addressing, network protocols, and troubleshooting.
+- Qualified in Enlisted Information Warfare.
 
 
-**Research Chef Intern**
-  ~ Snapchopstick
-  ~ 07/2018 - 08/2018
+**System Software Support Engineer**
+  ~ MBS Professional, Mason, Ohio
+  ~ Jan 2024 – Aug 2024
 
-- Designed two novel sandwiches by repurposing breads and meat from traditional bacon cheeseburgers, maximizing resource efficiency
-- Leveraged structure duality to boost cooking speed for two complementary tasks based on shared ingredients
-- Surpassed strong baselines on QWE'15 and ASDF'14 dataset
+- Developed and streamlined Windows 10/11 PC deployment via imaging, Windows PE, and batch scripting.
+- Created an AI-driven Text-to-Speech add-in for automating PowerPoint training.
+- Created documentation to set parameters and update the SQL Server database per customer configurations.
 
 
-## Awards and Honors
+**IT Systems Administration Assistant**
+  ~ Texas A&M Corpus Christi, Corpus Christi, Texas
+  ~ Aug 2019 – Dec 2021
 
-**Gold**, International Collegiate Catching Fish Contest (ICCFC)
-  ~ 2018
+- Handled 700+ tickets dealing with the administration of User Accounts, E-mail, Listserv, Security Groups, Distribution Groups, Shared Mailboxes, File Systems, HPC and Active Directory.
 
-**First Prize**, China National Scholarship for Outstanding Dragon Killers
-  ~ 2017, 2018
+
+**Submarine Electronics Technician**
+  ~ United States Navy, Norfolk, Virginia
+  ~ Apr 2014 – Apr 2019
+
+- Played a key role in signal analysis and navigation, significantly improving safety of ship and tactical awareness.
+- Led teams of 2-3 in the maintenance and repair of critical systems.
+- Qualified in Submarine Electronic Warfare Support System, Maintenance, Tag-Out, Electronic Key Management Systems User (KMI) with 100% accountability, Qualified in Enlisted Submarine Warfare.
+
+
+## Education
+
+**Texas A&M–Corpus Christi**
+  ~ Corpus Christi, Texas
+
+B.S. in Computer Science, Focus: Systems Programming
+  ~ Dec 2023 (GPA 3.65)
+
+
+## Projects
+
+**Document AI Organization & Scanner**
+
+Document classification, renaming, meta-tagging, and organization using AI. Utilized Microsoft Azure AI Intelligence, OpenAI, Python, Java, and JavaScript.
+
+**Comparing LLM Context Similarity**
+
+Tested the similarities and accuracy of different OpenAI models with Jupyter Notebooks.
+
+**Battlezone Remake**
+
+A recreation of the 1980s tank simulator done in C/C++ OpenGL, recreated with the iconic Green Vector 3D graphics, particle effects and collision detection.
+
+
+## Certifications
+
+**CompTIA Security+**
+
+**Cisco CCNA1**
 
 
 ## Skills
 
-**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Frython, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaSauce / <span class="iconify" data-icon="vscode-icons:file-type-typescript-official"></span> TypeSauce, <span class="iconify" data-icon="vscode-icons:file-type-cpp2"></span> Cheese++, <span class="iconify" data-icon="logos:java" data-inline="false"></span> Java Bean
+**Languages:** C, C#, C++, Java, Python, HTML/CSS/JavaScript, SQL, VBA, PowerShell, Batch, Bash
 
-**Tools and Frameworks:** GrillHub, PanFlow, TensorFork, SpiceNet, $\\LaTeX$
+**Tools & Platforms:** AFSIM, Simulink, MATLAB, Azure AI, OpenAI, Jupyter Notebooks, Active Directory, Windows PE, SVN, Git
 
-**Languages:** Chinese (native), English (proficient)
+**Networking:** Cisco Routers/Switches, IPv4/IPv6, Network Protocols & Troubleshooting
 `;
 
 export const DEFAULT_CSS_CONTENT = `/* Backbone CSS for Resume Template 1 */

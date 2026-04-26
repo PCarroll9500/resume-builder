@@ -11,27 +11,7 @@
       </template>
     </div>
 
-    <div flex="center col none gap-1" border="l dashed lg:none" w-10 bg-accent>
-      <template v-for="tool in tools" :key="tool.id">
-        <UiTooltipProvider :delay-duration="0">
-          <UiTooltip>
-            <UiTooltipTrigger as-child>
-              <UiButton
-                size="round"
-                variant="ghost-secondary"
-                @click="scrollTo(tool.id)"
-                :aria-label="getTooltip(tool.id)"
-              >
-                <span :class="[tool.icon, ' size-4']" />
-              </UiButton>
-            </UiTooltipTrigger>
-            <UiTooltipContent side="left">
-              {{ getTooltip(tool.id) }}
-            </UiTooltipContent>
-          </UiTooltip>
-        </UiTooltipProvider>
-      </template>
-    </div>
+    <div border="l dashed lg:none" w-10 bg-accent />
   </div>
 </template>
 
@@ -44,8 +24,9 @@ import {
   EditorToolbarFontSize,
   EditorToolbarMargins,
   EditorToolbarParagraphSpace,
+  EditorToolbarHeadingSpaceBelow,
   EditorToolbarLineHeight,
-  EditorToolbarCorrectCase
+
 } from "#components";
 
 const tools = [
@@ -85,15 +66,16 @@ const tools = [
     component: EditorToolbarParagraphSpace
   },
   {
+    id: "heading_space_below",
+    icon: "i-icon-park-outline:paragraph-break-two",
+    component: EditorToolbarHeadingSpaceBelow
+  },
+  {
     id: "line_height",
     icon: "i-ic:round-format-line-spacing",
     component: EditorToolbarLineHeight
   },
-  {
-    id: "correct_case",
-    icon: "i-icon-park-outline:check-correct",
-    component: EditorToolbarCorrectCase
-  }
+
 ];
 
 const scrollTo = (id: string) => {
@@ -113,7 +95,7 @@ const { t } = useI18n();
 
 const getTooltip = (id: string) => {
   const key = `toolbar.${id}`;
-  return ["file", "correct_case", "font_family", "margins"].includes(id)
+  return ["file", "font_family", "margins"].includes(id)
     ? t(`${key}.title`)
     : t(key);
 };

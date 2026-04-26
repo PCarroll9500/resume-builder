@@ -154,7 +154,7 @@ export class StorageService {
       data
     };
 
-    downloadFile("ohmycv_data.json", JSON.stringify(json));
+    downloadFile("resume_data.json", JSON.stringify(json));
   }
 
   /**

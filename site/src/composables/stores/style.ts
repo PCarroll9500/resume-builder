@@ -6,6 +6,7 @@ export type ResumeStyles = {
   marginH: number;
   lineHeight: number;
   paragraphSpace: number;
+  headingSpaceBelow: number;
   themeColor: string;
   fontCJK: Font;
   fontEN: Font;
