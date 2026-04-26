@@ -1,5 +1,11 @@
+import { readFileSync } from "fs";
+import { fileURLToPath } from "url";
+import { dirname, resolve } from "path";
 import { pwa } from "./configs/pwa";
 import { i18n } from "./configs/i18n";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const resumeMdContent = readFileSync(resolve(__dirname, "../resume/resume.md"), "utf-8");
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -61,6 +67,12 @@ export default defineNuxtConfig({
 
   site: {
     url: "https://pcarroll9500.github.io/resume-builder"
+  },
+
+  vite: {
+    define: {
+      __RESUME_MD_CONTENT__: JSON.stringify(resumeMdContent)
+    }
   },
 
   pwa,

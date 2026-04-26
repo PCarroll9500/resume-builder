@@ -1,0 +1,57 @@
+name: Generate Resume PDF
+
+on:
+  workflow_run:
+    workflows: ["Build and deploy Nuxt site to Pages"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  generate-pdf:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Playwright
+        run: |
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Wait for GitHub Pages deployment to propagate
+        run: sleep 90
+
+      - name: Generate PDF
+        run: node scripts/generate-pdf.js
+
+      - name: Commit PDF to resume-builder repo
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resume/Patrick_Carroll_Resume.pdf
+          git diff --staged --quiet || git commit -m "Update Patrick_Carroll_Resume.pdf [skip ci]"
+          git push
+
+      - name: Push PDF to portfolio repo
+        env:
+          PORTFOLIO_PAT: ${{ secrets.PORTFOLIO_PAT }}
+        run: |
+          git clone https://x-access-token:${PORTFOLIO_PAT}@github.com/PCarroll9500/PCarroll9500.github.io.git portfolio
+          cp resume/Patrick_Carroll_Resume.pdf portfolio/Patrick_Carroll_Resume.pdf
+          cd portfolio
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Patrick_Carroll_Resume.pdf
+          git diff --staged --quiet || git commit -m "Update Patrick_Carroll_Resume.pdf from resume.md"
+          git push
