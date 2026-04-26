@@ -2,7 +2,7 @@ import type { NuxtI18nOptions } from "@nuxtjs/i18n";
 
 export const i18n: NuxtI18nOptions = {
   defaultLocale: "en",
-  strategy: "prefix_and_default",
+  strategy: "no_prefix",
   locales: [
     {
       code: "en",
