@@ -22,107 +22,102 @@ export const DEFAULT_STYLES = {
 export const DEFAULT_MD_CONTENT = `---
 name: Patrick Carroll
 header:
-  - text: <span class="iconify" data-icon="tabler:phone"></span> (843) 437-6951
+  - text: |
+      <span style="font-size: 1.2em; font-weight: bold;">Junior Model and Simulation Engineer</span>
+  - text: <span class="iconify" data-icon="tabler:phone"></span> 843-437-6951
     newLine: true
-  - text: <span class="iconify" data-icon="tabler:mail"></span> PatrickCarroll.IT@outlook.com
-    link: mailto:PatrickCarroll.IT@outlook.com
+  - text: <span class="iconify" data-icon="tabler:mail"></span> patrickcarroll.it@outlook.com
+    link: mailto:patrickcarroll.it@outlook.com
   - text: <span class="iconify" data-icon="tabler:brand-github"></span> PCarroll9500
     link: https://github.com/PCarroll9500
-  - text: <span class="iconify" data-icon="tabler:map-pin"></span> Beavercreek, Ohio
-  - text: <span class="iconify" data-icon="tabler:shield-lock"></span> Clearance: Top-Secret SCI
-    newLine: true
+  - text: <span class="iconify" data-icon="charm:person"></span> PCarroll9500.github.io
+    link: https://pcarroll9500.github.io
 ---
 
-<!-- Important: Replace all template content, especially contact details, with your own information. -->
+## Security Clearance
+Active Top-Secret SCI
+  ~ 2014 - Present
 
-<!-- Important: When updating your email address, remember to change both the "text" (visible text) and the "link" (underlying hyperlink) fields. -->
+## Education
 
-10+ years of technical experience in programming, automation, and signal analysis. Reliable, motivated, and seeking opportunities supporting the DoD.
+B.S. in Computer Science (GPA 3.65)
+  ~ Texas A&M-Corpus Christi
+  ~ 04/2019 - 12/2023
 
+## Summary
+10+ years of experience spanning software development, RF signal analysis, and automation within defense environments. Proven track record building CI/CD pipelines, integrating simulation models, and deploying scalable solutions across government programs.
 
 ## Experience
 
 **Junior Model and Simulation Engineer**
   ~ Radiance Technologies, Beavercreek, Ohio
-  ~ Aug 2024 – Present
+  ~ 08/2024 - Present
 
-- Integrate Simulink models into AFSIM plugins in C++.
-- Introduce new models into pipeline automation via MATLAB scripting. Automate testing of verification and validation data.
-- Maintain version control via SVN.
-- Collaborate in a Kanban Agile team environment.
-
+- Developed and maintained CI/CD pipelines to build, test, and validate Simulink models into AFSIM plugins.
+- Package models and plugins to deploy across multiple government programs and agencies.
+- Partner with cross-functional engineering teams and government customers to integrate new models and features.
+<div style="margin-top: 5px"></div>
 
 **Information Systems Technician**
   ~ United States Navy Reserve, Cincinnati, Ohio
-  ~ Apr 2019 – Feb 2025
+  ~ 04/2019 - 04/2025
 
-- Support the Navy part time. Trained in Cisco Routers, Switches, End Devices, IPv4 and IPv6 addressing, network protocols, and troubleshooting.
-- Qualified in Enlisted Information Warfare.
-
+- Supported the Navy part-time. Trained in Cisco Routers, Switches, End Devices, IPv4 and IPv6 addressing, network protocols, and troubleshooting. Qualified in Enlisted Information Warfare.
+<div style="margin-top: 5px"></div>
 
 **System Software Support Engineer**
   ~ MBS Professional, Mason, Ohio
-  ~ Jan 2024 – Aug 2024
+  ~ 01/2024 - 08/2024
 
-- Developed and streamlined Windows 10/11 PC deployment via imaging, Windows PE, and batch scripting.
-- Created an AI-driven Text-to-Speech add-in for automating PowerPoint training.
-- Created documentation to set parameters and update the SQL Server database per customer configurations.
-
+- Developed Windows Preinstall scripts for Image Capture/Deployment.
+- Developed VBA MS PowerPoint add-in for AI-driven Text-To-Speech short video presentations.
+- Developed VBA macros in MS Word for SQL database interactions.
+<div style="margin-top: 5px"></div>
 
 **IT Systems Administration Assistant**
   ~ Texas A&M Corpus Christi, Corpus Christi, Texas
-  ~ Aug 2019 – Dec 2021
+  ~ 08/2019 - 12/2021
 
 - Handled 700+ tickets dealing with the administration of User Accounts, E-mail, Listserv, Security Groups, Distribution Groups, Shared Mailboxes, File Systems, HPC and Active Directory.
-
+<div style="margin-top: 5px"></div>
 
 **Submarine Electronics Technician**
   ~ United States Navy, Norfolk, Virginia
-  ~ Apr 2014 – Apr 2019
+  ~ 04/2014 - 04/2019
 
-- Played a key role in signal analysis and navigation, significantly improving safety of ship and tactical awareness.
+- Analyzed and classified different types of RF signals.
 - Led teams of 2-3 in the maintenance and repair of critical systems.
-- Qualified in Submarine Electronic Warfare Support System, Maintenance, Tag-Out, Electronic Key Management Systems User (KMI) with 100% accountability, Qualified in Enlisted Submarine Warfare.
-
-
-## Education
-
-**Texas A&M–Corpus Christi**
-  ~ Corpus Christi, Texas
-
-B.S. in Computer Science, Focus: Systems Programming
-  ~ Dec 2023 (GPA 3.65)
-
+- Supported joint operations at sea.
 
 ## Projects
 
-**Document AI Organization & Scanner**
+**Stock Bot**, Automated day-trading engine that scans for volatile stocks, analyzes news using GPT-4o, and executes trades via the Interactive Brokers API. Built with Python, and hosted on AWS.
 
-Document classification, renaming, meta-tagging, and organization using AI. Utilized Microsoft Azure AI Intelligence, OpenAI, Python, Java, and JavaScript.
+<div style="margin-top: 8px"></div>
 
-**Comparing LLM Context Similarity**
+**Document AI Organization & Scanner**, Document classification, renaming, meta-tagging, and organization using AI. Utilized Microsoft Azure AI Intelligence, OpenAI, Python, Java, and JavaScript.
 
-Tested the similarities and accuracy of different OpenAI models with Jupyter Notebooks.
+<div style="margin-top: 8px"></div>
 
-**Battlezone Remake**
+**Battlezone**, Recreation of the 1980s tank simulator in C/C++ OpenGL, with iconic Green Vector 3D graphics, particle effects and collision detection.
 
-A recreation of the 1980s tank simulator done in C/C++ OpenGL, recreated with the iconic Green Vector 3D graphics, particle effects and collision detection.
+<div style="margin-top: 8px"></div>
 
-
-## Certifications
-
-**CompTIA Security+**
-
-**Cisco CCNA1**
-
+**Comparing LLM Context Similarity**, Tested the similarities and accuracy of different OpenAI models with Jupyter Notebooks.
 
 ## Skills
 
-**Languages:** C, C#, C++, Java, Python, HTML/CSS/JavaScript, SQL, VBA, PowerShell, Batch, Bash
+**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-cpp2"></span> C/C++, <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-matlab"></span> MATLAB, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML, <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript
 
-**Tools & Platforms:** AFSIM, Simulink, MATLAB, Azure AI, OpenAI, Jupyter Notebooks, Active Directory, Windows PE, SVN, Git
+**Tools and Frameworks:** TortoiseSVN, Git, Jira, Confluence, Jenkins, Groovy
 
-**Networking:** Cisco Routers/Switches, IPv4/IPv6, Network Protocols & Troubleshooting
+## Certifications
+
+CompTIA Security+
+  ~ 06/2022 - Present
+
+Microsoft Certified: Azure AI Fundamentals
+  ~ 07/2023 - Present
 `;
 
 export const DEFAULT_CSS_CONTENT = `/* Backbone CSS for Resume Template 1 */
