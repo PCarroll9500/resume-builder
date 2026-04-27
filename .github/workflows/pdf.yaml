@@ -14,6 +14,7 @@ jobs:
 
     permissions:
       contents: write
+      actions: write
 
     steps:
       - name: Checkout
@@ -35,7 +36,7 @@ jobs:
       - name: Generate PDF
         run: node scripts/generate-pdf.js
 
-      - name: Commit PDF to resume-builder repo
+      - name: Commit PDF to repo
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -43,15 +44,7 @@ jobs:
           git diff --staged --quiet || git commit -m "Update Patrick_Carroll_Resume.pdf [skip ci]"
           git push
 
-      - name: Push PDF to portfolio repo
+      - name: Trigger deploy to publish PDF to Pages
+        run: gh workflow run deploy.yaml
         env:
-          PORTFOLIO_PAT: ${{ secrets.PORTFOLIO_PAT }}
-        run: |
-          git clone https://x-access-token:${PORTFOLIO_PAT}@github.com/PCarroll9500/PCarroll9500.github.io.git portfolio
-          cp resume/Patrick_Carroll_Resume.pdf portfolio/Patrick_Carroll_Resume.pdf
-          cd portfolio
-          git config user.name "GitHub Actions"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Patrick_Carroll_Resume.pdf
-          git diff --staged --quiet || git commit -m "Update Patrick_Carroll_Resume.pdf from resume.md"
-          git push
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
