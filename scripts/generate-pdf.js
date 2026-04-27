@@ -1,5 +1,8 @@
-const { chromium } = require("playwright");
-const path = require("path");
+import { chromium } from "playwright";
+import { resolve, dirname } from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
@@ -30,7 +33,7 @@ const path = require("path");
   // Allow time for fonts and Iconify icons to load
   await page.waitForTimeout(5000);
 
-  const outputPath = path.resolve(__dirname, "../resume/Patrick_Carroll_Resume.pdf");
+  const outputPath = resolve(__dirname, "../resume/Patrick_Carroll_Resume.pdf");
 
   console.log(`Generating PDF at ${outputPath}...`);
   await page.pdf({
