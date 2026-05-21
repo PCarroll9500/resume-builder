@@ -1,8 +1,13 @@
 import { chromium } from "playwright";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
+import { readFileSync } from "fs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+const resumeMd = readFileSync(resolve(__dirname, "../resume/resume.md"), "utf-8");
+const paperMatch = resumeMd.match(/^[ \t]+paper:\s*(\S+)/m);
+const paperFormat = paperMatch ? paperMatch[1] : "A4";
 
 (async () => {
   const browser = await chromium.launch({ headless: true });
@@ -36,9 +41,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
   const outputPath = resolve(__dirname, "../resume/Patrick_Carroll_Resume.pdf");
 
   console.log(`Generating PDF at ${outputPath}...`);
+  console.log(`Using paper format: ${paperFormat}`);
   await page.pdf({
     path: outputPath,
-    format: "A4",
+    format: paperFormat,
     printBackground: true,
   });
 
