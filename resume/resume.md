@@ -17,7 +17,6 @@ styles:
   themeColor: "#377bb5"
   fontEN:
     name: Minion Pro
-
   marginH: 20
   marginV: 20
   lineHeight: 1.5

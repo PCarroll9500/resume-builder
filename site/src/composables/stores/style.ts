@@ -34,7 +34,7 @@ const serializeStylesBlock = (s: ResumeStyles) =>
 
 export const syncStylesToMarkdown = (markdown: string, s: ResumeStyles) =>
   markdown.replace(/^(---\r?\n)([\s\S]*?)(\r?\n---)/,  (_, open, body, close) => {
-    const stripped = body.replace(/\r?\nstyles:(?:\r?\n[ \t]+[^\r\n]*)*/g, "").trimEnd();
+    const stripped = body.replace(/\r?\nstyles:(?:\r?\n(?!\S)[^\r\n]*)*/g, "").trimEnd();
     return `${open}${stripped}\n${serializeStylesBlock(s)}${close}`;
   });
 
