@@ -1,11 +1,18 @@
 import { readFileSync } from "fs";
 import { fileURLToPath } from "url";
 import { dirname, resolve } from "path";
+import { load as yamlLoad } from "js-yaml";
 import { pwa } from "./configs/pwa";
 import { i18n } from "./configs/i18n";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const resumeMdContent = readFileSync(resolve(__dirname, "../resume/resume.md"), "utf-8");
+
+// Extract YAML frontmatter styles to inject as a build-time constant
+const frontMatterMatch = resumeMdContent.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+const frontMatterStyles = frontMatterMatch
+  ? (yamlLoad(frontMatterMatch[1]) as Record<string, unknown>)?.styles ?? {}
+  : {};
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -71,7 +78,8 @@ export default defineNuxtConfig({
 
   vite: {
     define: {
-      __RESUME_MD_CONTENT__: JSON.stringify(resumeMdContent)
+      __RESUME_MD_CONTENT__: JSON.stringify(resumeMdContent),
+      __RESUME_STYLES_CONTENT__: JSON.stringify(frontMatterStyles)
     }
   },
 

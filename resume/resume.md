@@ -1,5 +1,19 @@
 ---
 name: Patrick Carroll
+styles:
+  paper: A4
+  fontSize: 12
+  themeColor: "#377bb5"
+  fontEN:
+    name: Minion Pro
+  fontCJK:
+    name: 华康宋体
+    fontFamily: HKST
+  marginH: 20
+  marginV: 20
+  lineHeight: 1.5
+  paragraphSpace: 5
+  headingSpaceBelow: 8
 header:
   - text: |
       <span style="font-size: 1.2em; font-weight: bold;">Junior Model and Simulation Engineer</span>

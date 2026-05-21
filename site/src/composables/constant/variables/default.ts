@@ -1,7 +1,7 @@
 import { PREVIEW_SELECTOR } from "./render";
 import type { ResumeStyles } from "../../stores/style";
 
-export const DEFAULT_STYLES = {
+const HARDCODED_STYLES: ResumeStyles = {
   marginV: 20,
   marginH: 20,
   lineHeight: 1.5,
@@ -17,10 +17,13 @@ export const DEFAULT_STYLES = {
   },
   fontSize: 12,
   paper: "A4"
-} as ResumeStyles;
+};
 
 declare const __RESUME_MD_CONTENT__: string;
+declare const __RESUME_STYLES_CONTENT__: Partial<ResumeStyles>;
+
 export const DEFAULT_MD_CONTENT = __RESUME_MD_CONTENT__;
+export const DEFAULT_STYLES = { ...HARDCODED_STYLES, ...__RESUME_STYLES_CONTENT__ } as ResumeStyles;
 
 export const DEFAULT_CSS_CONTENT = `/* Backbone CSS for Resume Template 1 */
 
