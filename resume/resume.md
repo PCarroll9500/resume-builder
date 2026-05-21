@@ -1,7 +1,18 @@
 ---
 name: Patrick Carroll
+header:
+  - text: |
+      <span style="font-size: 1.2em; font-weight: bold;">Model and Simulation Engineer</span>
+  - text: <span class="iconify" data-icon="tabler:phone"></span> 843-437-6951
+    newLine: true
+  - text: <span class="iconify" data-icon="tabler:mail"></span> patrickcarroll.it@outlook.com
+    link: mailto:patrickcarroll.it@outlook.com
+  - text: <span class="iconify" data-icon="tabler:brand-github"></span> PCarroll9500
+    link: https://github.com/PCarroll9500
+  - text: <span class="iconify" data-icon="charm:person"></span> PCarroll9500.github.io
+    link: https://pcarroll9500.github.io
 styles:
-  paper: A4
+  paper: letter
   fontSize: 12
   themeColor: "#377bb5"
   fontEN:
@@ -12,33 +23,22 @@ styles:
   marginH: 20
   marginV: 20
   lineHeight: 1.5
-  paragraphSpace: 5
+  paragraphSpace: 10
   headingSpaceBelow: 8
-header:
-  - text: |
-      <span style="font-size: 1.2em; font-weight: bold;">Junior Model and Simulation Engineer</span>
-  - text: <span class="iconify" data-icon="tabler:phone"></span> 843-437-6951
-    newLine: true
-  - text: <span class="iconify" data-icon="tabler:mail"></span> patrickcarroll.it@outlook.com
-    link: mailto:patrickcarroll.it@outlook.com
-  - text: <span class="iconify" data-icon="tabler:brand-github"></span> PCarroll9500
-    link: https://github.com/PCarroll9500
-  - text: <span class="iconify" data-icon="charm:person"></span> PCarroll9500.github.io
-    link: https://pcarroll9500.github.io
 ---
 
 ## Security Clearance
 Active Top-Secret SCI
   ~ 2014 - Present
 
-## Education
-
-B.S. in Computer Science (GPA 3.65)
-  ~ Texas A&M-Corpus Christi
-  ~ 04/2019 - 12/2023
-
 ## Summary
-10+ years of experience spanning software development, RF signal analysis, and automation within defense environments. Proven track record building CI/CD pipelines, integrating simulation models, and deploying scalable solutions across government programs.
+Model & Simulation Engineer specializing in AFSIM plugin development, simulation model integration, and CI/CD automation for defense applications. Combines 10+ years of technical and military experience across software development, engineering automation, systems administration, and RF signal analysis.
+
+## Skills
+
+**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-cpp2"></span> C/C++, <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-matlab"></span> MATLAB, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML, <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript
+
+**Tools and Frameworks:** TortoiseSVN, Git, Jira, Confluence, Jenkins, Groovy
 
 ## Experience
 
@@ -46,7 +46,7 @@ B.S. in Computer Science (GPA 3.65)
   ~ Radiance Technologies, Beavercreek, Ohio
   ~ 08/2024 - Present
 
-- Developed and maintained CI/CD pipelines to build, test, and validate Simulink models into AFSIM plugins.
+- Develop and maintain CI/CD pipelines to build, test, and validate Simulink models into AFSIM plugins.
 - Package models and plugins to deploy across multiple government programs and agencies.
 - Partner with cross-functional engineering teams and government customers to integrate new models and features.
 <div style="margin-top: 5px"></div>
@@ -63,7 +63,7 @@ B.S. in Computer Science (GPA 3.65)
   ~ 01/2024 - 08/2024
 
 - Developed Windows Preinstall scripts for Image Capture/Deployment.
-- Developed VBA MS PowerPoint add-in for AI-driven Text-To-Speech short video presentations.
+- Developed a VBA PowerPoint add-in that automated AI-driven text-to-speech video generation.
 - Developed VBA macros in MS Word for SQL database interactions.
 <div style="margin-top: 5px"></div>
 
@@ -98,12 +98,11 @@ B.S. in Computer Science (GPA 3.65)
 
 **Comparing LLM Context Similarity**, Tested the similarities and accuracy of different OpenAI models with Jupyter Notebooks.
 
-## Skills
+## Education
 
-**Programming Languages:** <span class="iconify" data-icon="vscode-icons:file-type-cpp2"></span> C/C++, <span class="iconify" data-icon="vscode-icons:file-type-python"></span> Python, <span class="iconify" data-icon="vscode-icons:file-type-matlab"></span> MATLAB, <span class="iconify" data-icon="vscode-icons:file-type-html"></span> HTML, <span class="iconify" data-icon="vscode-icons:file-type-css"></span> CSS, <span class="iconify" data-icon="vscode-icons:file-type-js-official"></span> JavaScript
-
-**Tools and Frameworks:** TortoiseSVN, Git, Jira, Confluence, Jenkins, Groovy
-
+B.S. in Computer Science (GPA 3.65)
+  ~ Texas A&M-Corpus Christi
+  ~ 04/2019 - 12/2023
 ## Certifications
 
 CompTIA Security+
